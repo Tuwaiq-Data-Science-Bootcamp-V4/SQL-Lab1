@@ -35,11 +35,10 @@ FROM authors;
 - Write an SQL query to return only Authors whose last name begins with S.
 
 ``` sql
-SELECT name
-FROM authors
-WHERE name LIKE '% S%'
+SELECT * FROM Authors
+WHERE NAME LIKE 'S%'
 ```
-<img src="Q5.png" alt="Image" width="400px" height= "400px">
+<img src="Q55.png" alt="Image" width="400px" height= "400px">
 - List the number of Authors in each country.
 
 ``` sql
