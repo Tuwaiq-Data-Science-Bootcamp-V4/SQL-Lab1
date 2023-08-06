@@ -31,8 +31,5 @@ SELECT * FROM  Authors WHERE Age between 50 and 60
 SELECT * FROM Authors where  age = (select min(age) from Authors)
 ### Choose the correct `JOIN` clause to view all books and their authors.
 
-SELECT BooksAuthors.authorid , Authors.name , BooksAuthors.BookId 
-, Books.Title  
-from BooksAuthors 
-  INNER join Books on BooksAuthors.BookId = Books.Id
-    INNER JOIN Authors on Authors.ID = BooksAuthors.authorid
+select  ba.authorid , Authors.name , ba.BookId , b.Title  from BooksAuthors ba INNER join Books b on ba.BookId = b.Id
+INNER JOIN Authors on Authors.ID = ba.authorid
