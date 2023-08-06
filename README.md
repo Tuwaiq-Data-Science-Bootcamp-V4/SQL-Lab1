@@ -17,9 +17,11 @@
 ===========================================
 ## Answer
 
-1- CREATE TABLE BooksAuthors (
-	AuthorId int,
-	BookId int
+1-  CREATE TABLE BooksAuthors (
+	AuthorId SERIAL,
+	BookId SERIAL,
+   FOREIGN KEY (AuthorId) REFERENCES Authors (ID),
+   FOREIGN KEY (BookId) REFERENCES Books (ID)
 );
 
 2- INSERT INTO BooksAuthors
