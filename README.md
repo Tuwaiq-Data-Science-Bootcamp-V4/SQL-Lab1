@@ -13,3 +13,60 @@
 - Select all records where the age column has the value BETWEEN 50 - 60 in the “Authors” table.
 - Use the MIN function to select the record with the smallest value of the Age column from the “Authors” table.
 - Choose the correct `JOIN` clause to view all books and their authors.
+
+===========================================
+## Answer
+
+1- CREATE TABLE BooksAuthors (
+	AuthorId int,
+	BookId int
+);
+
+2- INSERT INTO BooksAuthors
+VALUES (1,1) -----------------------> ```5 Record```
+
+3- SELECT country from Authors
+
+4- SELECT DISTINCT country from Authors
+
+5- SELECT Name
+from Authors 
+where Name like 'S%'
+
+6- SELECT country, count(ID) as Number_of_Author
+from Authors
+GROUP by country
+
+7- SELECT ID, Name, Country, Age
+from Authors
+ORDER BY Name ASC
+
+8- SELECT ID, Name, Country, Age
+from Authors
+ORDER BY Name DESC
+
+9- SELECT id, title
+from Books
+where title like '%Great%'
+
+10- SELECT ID, Name, Country, Age
+FROM Authors
+WHERE country is not 'USA'
+
+11- SELECT ID, Name, Country, Age
+FROM Authors
+WHERE country == 'USA' or  Country == 'India'
+
+12- SELECT ID, Name, Country, Age
+FROM Authors
+WHERE age BETWEEN 50 and 60
+
+13- SELECT ID, Name, Country, min(Age) as Youngest
+FROM Authors
+
+14- SELECT Name, Title
+FROM Authors
+RIGHT OUTER JOIN Books
+on Authors.ID == Books.Id
+GROUP by name, title;
+
