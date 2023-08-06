@@ -54,9 +54,12 @@ where age BETWEEN 40 and 60;
 13
 select min(age )as minmum_age from Authors;
 14
+
 SELECT b.title,a.name
 FROM Authors a 
-INNER JOIN Books b
-ON b.id=a.id
+join BooksAuthors ba
+on ba.Authorid=a.ID 
+join Books b 
+on b.Id=ba.BookId
 
 ```
