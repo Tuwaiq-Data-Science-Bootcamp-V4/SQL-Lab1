@@ -1,38 +1,47 @@
 # SQL-Lab1
 - Create a table "BooksAuthors" containing two fields (AuthorId, BookId)
-The query:
-CREATE TABLE BooksAuthors(
-  AuthorId int ,
-  BookId int )
+The query 1 :
+
+<img src="1.png" alt="Image" width="400px" height= "400px">
 
 - Insert at least 5 records into the BooksAuthors table.
-The query:
-INSERT INTO BooksAuthors
-VALUES (1,1),(2,2),(3,3),(4,4),(5,5)
+The query 2 :
+<img src="2.png" alt="Image" width="400px" height= "400px">
   
 - Write a statement that will select the Country column from the Authors table.
-  The query:
-SELECT Country
-FROM Authors
+  The query 3 :
+<img src="3.png" alt="Image" width="400px" height= "400px">
 - Select all the different values from the Country column in the Authors table.
-  The query:
+  The query  4 :
+  <img src="4.png" alt="Image" width="400px" height= "400px">
 - Write an SQL query to return only Authors whose name begins with S.
-  The query:
+  The query  5 :
+
+  <img src="5.png" alt="Image" width="400px" height= "400px">
 - List the number of Authors in each country.
-  The query:
+  The query  6 :
+  <img src="6.png" alt="Image" width="400px" height= "400px">
 - Select all records from the Authors table, and sort the result alphabetically by the column's name.
-  The query:
+  The query  7 :
+  <img src="7.png" alt="Image" width="400px" height= "400px">
 - Select all records from the Authors table, and sort the result reversed alphabetically by the column name.
-  The query:
+  The query  8 :
+  <img src="8.png" alt="Image" width="400px" height= "400px">
 - Select all records where the Title column has the value ‘Great ' from the Books table.
-  The query:
+  The query  9 :
+  <img src="9.png" alt="Image" width="400px" height= "400px">
 - Use the NOT keyword to select all records where the country is NOT "USA".
-  The query:
+  The query  10 :
+  <img src="10.png" alt="Image" width="400px" height= "400px">
 - Select all records where the country column has the value 'USA' or ‘India' from the “Authors” table
-  The query:
+  The query  11 :
+  <img src="11.png" alt="Image" width="400px" height= "400px">
 - Select all records where the age column has the value BETWEEN 50 - 60 in the “Authors” table.
-  The query:
+  The query  12 :
+  <img src="12.png" alt="Image" width="400px" height= "400px">
 - Use the MIN function to select the record with the smallest value of the Age column from the “Authors” table.
-  The query:
+  The query  13 :
+  <img src="13.png" alt="Image" width="400px" height= "400px">
 - Choose the correct `JOIN` clause to view all books and their authors.
-  The query:
+  The query  14 :
+  <img src="14.png" alt="Image" width="400px" height= "400px">
