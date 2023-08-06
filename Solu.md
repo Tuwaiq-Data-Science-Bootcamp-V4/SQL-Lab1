@@ -27,7 +27,30 @@ INNER JOIN Books ON Books.id = BooksAuthors.BookId
 INNER JOIN Authors ON Authors.id = BooksAuthors.AuthorId;
 
 # Output
-![First](Screenshot (5).png)
-![Second](Screenshot (6).png)
-![Third](Screenshot (7).png)
-![Fourth](Screenshot (8).png)
+| Country    |
+|---------|
+| USA    |
+| USA   |
+| UK   |
+| USA    |
+| USA   |
+| India   |
+| USA    |
+| USA   |
+
+
+| Country    |
+|---------|
+| USA    |
+| UK   |
+| India   |
+
+| ID   | Name | Country | Age |
+|--------|-----|--------|------------|
+| 4   | Scott Hanselman  | USA   | 65   |
+
+| Country      | NumberOfAuthors |
+|-----------|-----|
+| India     | 1  |
+| UK        | 1  |
+| USA       | 6  |
