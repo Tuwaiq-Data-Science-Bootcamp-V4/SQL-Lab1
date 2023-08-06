@@ -64,9 +64,10 @@ WHERE age BETWEEN 50 and 60
 13- SELECT ID, Name, Country, min(Age) as Youngest
 FROM Authors
 
-14- SELECT Name, Title
-FROM Authors
-RIGHT OUTER JOIN Books
-on Authors.ID == Books.Id
-GROUP by name, title;
+14- SELECT *
+from BooksAuthors
+JOIN Authors
+on BooksAuthors.Authorid == Authors.ID
+JOIN Books
+ON BooksAuthors.BookId == Books.Id
 
