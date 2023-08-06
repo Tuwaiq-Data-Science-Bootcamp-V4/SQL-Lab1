@@ -2,7 +2,7 @@
 CREATE table BooksAuthors (AuthorId INT , BookId INT); 
 
 2:
-INSERT INTO BooksAuthors VALUES(1,10),(2,12),(3,13),(4,14),(5,15) 
+INSERT INTO BooksAuthors VALUES(1,1),(2,2),(3,3),(4,4),(5,5) 
 
 3:
 
@@ -36,8 +36,15 @@ select min(age) from Authors
 select authors.name, books.title from books
 inner join authors
 on authors.id = books.id
-*/
 
+14:
+SELECT BA.BookId, B.Title, BA.AuthorId, Authors.name
+FROM BooksAuthors BA
+	INNER JOIN Books B
+	ON B.Id = BA.BookId
+		INNER JOIN Authors
+		on Authors.Id = BA.AuthorId
+*/
 
 
 
