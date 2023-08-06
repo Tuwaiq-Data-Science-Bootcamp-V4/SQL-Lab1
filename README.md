@@ -49,7 +49,7 @@
   ```SQL
   SELECT * from Authors ORDER BY Name DESC;
   ```
-  ![alt text]()
+  ![alt text](Screenshot%202023-08-06%20at%203.19.28%20PM.png)
 - Select all records where the Title column has the value ‘Great ' from the Books table.
   ```SQL
   SELECT * FROM Books WHERE title LIKE '%great%'
