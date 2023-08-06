@@ -34,7 +34,7 @@ select min(age) from Authors
 14:
 
 select authors.name, books.title from books
-full outer join authors
+inner join authors
 on authors.id = books.id
 */
 
