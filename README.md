@@ -23,7 +23,7 @@
 );
 
 2- INSERT INTO BooksAuthors
-VALUES (1,1) -----------------------> ```5 Record```
+VALUES (1,1),(2,2),(3,3),(4,4),(5,5)
 
 3- SELECT country from Authors
 
