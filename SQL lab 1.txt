@@ -1,0 +1,73 @@
+/* q1 Create a table "BooksAuthors" containing two fields (AuthorId, BookId)*/
+create table BooksAuthors( 
+  AuthorId SERIAL NOT NULL,
+  BookId SERIAL  NOT NULL,
+FOREIGN KEY (AuthorId) REFERENCES Authors(Id),
+FOREIGN KEY (BookId) REFERENCES Books(Id) ); 
+  
+  /*q2 Insert at least 5 records into the BooksAuthors table.*/
+  insert into BooksAuthors ( AuthorId , BookId )
+  values (1,1) , (2,2) , (3,3) , (4,4) , (5,5); 
+  
+  /*q3 Write a statement that will select the Country column from the Authors table.*/ 
+  select country 
+  from Authors; 
+  
+  /*q4 Select all the different values from the Country column in the Authors table.*/ 
+ select DISTINCT country
+ from authors; 
+ 
+ /*q5 Write an SQL query to return only Authors whose name begins with S.*/
+ select Name
+ from Authors
+ WHERE Name like 'S%' ; 
+ 
+ /*q6 List the number of Authors in each country.*/
+ select COUNT (id) , country
+ from Authors 
+ GROUP by country;
+ 
+ /*q7 Select all records from the Authors table, and sort the result alphabetically by the column's name.*/ 
+ SELECT * 
+ from Authors
+ ORDER by name ; 
+
+/*q8 Select all records from the Authors table, and sort the result reversed alphabetically by the column name.*/
+select * 
+FROM Authors 
+ORDER by name DESC;
+
+/*q9 Select all records where the Title column has the value ‘Great ' from the Books table.*/
+select *
+from Books 
+where Title like '%Great' ;
+
+/*q10 Use the NOT keyword to select all records where the country is NOT "USA".*/
+SELECT *
+from Authors
+WHERE not country ='USA' ;
+
+/*q11 Select all records where the country column has the value 'USA' or ‘India' from the “Authors” table*/
+select *
+from Authors
+where country in ('USA' , 'India') ;
+
+/*q12 Select all records where the age column has the value BETWEEN 50 - 60 in the “Authors” table.*/ 
+select * 
+from Authors 
+where age BETWEEN 50 and 60 ; 
+
+/*q13 Use the MIN function to select the record with the smallest value of the Age column from the “Authors” table.*/
+select min (age)
+from Authors ; 
+
+/*q14 Choose the correct JOIN clause to view all books and their authors.*/ 
+select Authors.name , Books.title 
+from Books
+inner join authors
+on Authors.id = Books.id ;
+
+
+ 
+
+
